@@ -75,21 +75,18 @@ select {
 /* Окончания сброса стилей */
 /* Шрифты */
 @font-face {
-    font-family: 'Gotham Pro';
-    src: url('../fonts/GothamPro.eot');
-url('../fonts/GothamPro.eot?#iefix') format('embedded-opentype'),
-url('../fonts/GothamPro.woff') format('woff'),
-url('../fonts/GothamPro.ttf') format('truetype');
+    font-family: 'Ubuntu';
+    src: url('../fonts/ubuntu_[allfont.ru].ttf');
+    src: local('Ubuntu'),
+    url('../fonts/ubuntu_[allfont.ru].ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
-    font-family: 'Gotham Pro Black';
-    src: url('../fonts/GothamPro-Black.eot');
-    src: local('Gotham Pro Black'),
-    url('../fonts/GothamPro-Black.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/GothamPro-Black.woff') format('woff'),
-    url('../fonts/GothamPro-Black.ttf') format('truetype');
+    font-family: 'PT Serif';
+    src: url('../fonts/pt-serif_[allfont.ru].ttf');
+    src: local('PT Serif'),
+    url('../fonts/pt-serif_[allfont.ru].ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -172,9 +169,9 @@ html.fixed {
 }
 /* Основной контент */
 .container {
-    max-width: 1920px;
+    max-width: 1170px;
     margin: 0 auto;
-    padding: 0 150px;
+    padding: 0 15px;
 }
 .flex {
     display: flex;
@@ -212,5 +209,194 @@ html.fixed {
 }
 /* Шапка */
 #main-header {
-    background:
+    background: url(../img/header-bg.jpg) top center no-repeat;
+    background-size: cover;
+}
+#main-header .container {
+    padding: 20px 0;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.nav-contacts {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.nav li {
+    margin: 0 9px;
+}
+.nav li a {
+    font: 13px/44px 'Ubuntu', arial;
+    font-weight: 400;
+    color: white;
+    -webkit-transition: .2s all linear;
+    -o-transition: .2s all linear;
+    transition: .2s all linear;
+    border-bottom: transparent;
+    text-transform: uppercase;
+}
+.nav li a:active, .nav li a:hover {
+    color: #f6b82f;
+    border-bottom: 1px solid;
+}
+.header-contacts {
+    margin-left: 52px;
+    -ms-flex-line-pack: end;
+    align-content: flex-end;
+}
+.header-contacts a {
+    display: block;
+    font: 22px/44px 'PT Serif', arial;
+    font-weight: 600;
+    color: white;
+}
+.call {
+    padding: 12px 20px;
+    border: 1px solid #f6b82f;
+    border-radius: 5px;
+    background: #be1016;
+    font: 11px 'Open Sans', arial;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    -webkit-transition: .2s all linear;
+    -o-transition: .2s all linear;
+    transition: .2s all linear;
+}
+.call:hover {
+    background: #f6b82f;
+}
+/* Экран 1 */
+#section-1 {
+    background: url(../img/section-1_bg.jpg) top center no-repeat;
+    background-size: cover;
+}
+#section-1 .container {
+    padding: 100px 15px 125px;
+}
+.section-1_content, .section-1_form {
+    width: 50%;
+    flex: 1 1 50%;
+}
+.section-1_title h1 {
+    font: 67px 'PT Serif', arial;
+    font-weight: 600;
+    color: white;
+}
+.section-1_text {
+    margin-top: 20px;
+}
+.section-1_text p {
+    padding-right: 100px;
+    font: 18px/25px 'Ubuntu', arial;
+    font-weight: 400;
+    color: white;
+}
+.section-1_form {
+    padding-left: 113px;
+}
+.form-title {
+    width: 324px;
+    background: #3276fd;
+    padding: 25px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.form-title p {
+    font: 24px 'PT Serif', arial;
+    font-weight: 600;
+    color: white;
+}
+#section-1_form {
+}
+.section-1_form-item {
+    position: relative;
+    margin-bottom: 8px;
+}
+.section-1_form-item, .section-1_form-item label, .section-1_form-item input {
+    width: 324px;
+    height: 60px;
+    cursor: pointer;
+}
+.section-1_form-item label {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.section-1_form-item input {
+    padding: 20px 40px;
+    border: none;
+    border-radius: 5px;
+}
+.section-1_form-item .name {
+    background: url("../img/name-icon.png") 15px center no-repeat white;
+}
+.section-1_form-item .phone {
+    background: url("../img/phone-icon.png") 15px center no-repeat white;
+}
+.submit-btn {
+    margin-top: 8px;
+    width: 324px;
+    height: 70px;
+    font: 16px 'Ubuntu', arial;
+    font-weight: 300;
+    color: #262a2d;
+}
+.submit-btn, .btn-about {
+    border: none;
+    border-radius: 5px;
+    background: #f6b82f;
+    cursor: pointer;
+    -webkit-transition: .2s all linear;
+    -o-transition: .2s all linear;
+    transition: .2s all linear;
+    text-transform: uppercase;
+}
+.submit-btn:hover, .btn-about:hover {
+    background: #dca325;
+}
+/* Акция */
+#section-2 .container {
+    padding: 25px 15px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.section-2_title {
+    margin-right: 40px;
+}
+.section-2_title h2 {
+    width: 165px;
+    font: 20px/25px 'Ubuntu', arial;
+    font-weight: 600;
+    color: #3a3d3f;
+}
+.section-2_text p {
+    font: 18px/25px 'Ubuntu', arial;
+    font-weight: 300;
+    color: #3a3d3f;
+}
+.section-2_btn {
+    margin-left: 95px;
+}
+.btn-about {
+    width: 202px;
+    height: 40px;
+    padding: 15px 20px;
+    font: 12px/14px 'Ubuntu', arial;
+    font-weight: 300;
+    color: #262a2d;
+}
+/* Экран 3 */
+#section-3 .container {
+    position: relative;
+}
+.section-3_title {
+    position: absolute;
+    top: 50px;
+    left: 15px;
 }

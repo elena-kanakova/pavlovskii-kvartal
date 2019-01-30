@@ -5,6 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/owl.carousel.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>ЖК Сказка</title>
 </head>
@@ -43,27 +44,27 @@
                     <p>Малоэтажный жилой комплекс клубного формата в 14 км от Москвы по Новорижскому шоссе.
                         Полноценный пригород в лучших традициях европейской культуры: широкие улицы, большие благоустроенные общественные пространства и много места для прогулок по территории.</p>
                 </div>
-                <div class="section-1_form">
-                    <div class="form-title">
-                        <p>Узнайте стоимость вашего нового дома!</p>
-                    </div>
-                    <form action="" id="section-1_form">
-                        <div class="section-1_form-item">
-                            <label for="name"></label>
-                            <input id="name" type="text" placeholder="Имя">
-                        </div>
-                        <div class="section-1_form-item">
-                            <label for="phone"></label>
-                            <input id="phone" type="tel" placeholder="Номер телефона">
-                        </div>
-                        <button type="submit">УЗНАТЬ СТОИМОСТЬ</button>
-                    </form>
+            </div>
+            <div class="section-1_form">
+                <div class="form-title">
+                    <p>Узнайте стоимость вашего нового дома!</p>
                 </div>
+                <form action="" id="section-1_form">
+                    <div class="section-1_form-item">
+                        <label for="name"></label>
+                        <input id="name" type="text" class="name" placeholder="Имя">
+                    </div>
+                    <div class="section-1_form-item">
+                        <label for="phone"></label>
+                        <input id="phone" type="tel" class="phone" placeholder="Номер телефона">
+                    </div>
+                    <button type="submit" class="submit-btn">УЗНАТЬ СТОИМОСТЬ</button>
+                </form>
             </div>
         </div>
     </section>
     <section id="section-2">
-        <div class="container">
+        <div class="container flex">
             <div class="section-2_title">
                 <h2>АКЦИЯ!<br>
                     НЕ УПУСТИТЕ!</h2>
@@ -77,10 +78,12 @@
             </div>
         </div>
     </section>
-    <section id="section-3" class="container">
-        <div class="section-3_title">
-            <h2>Посмотрите<br>
-                как у нас красиво</h2>
+    <section id="section-3">
+        <div class="container">
+            <div class="section-3_title">
+                <h2>Посмотрите<br>
+                    как у нас красиво</h2>
+            </div>
         </div>
         <div id="section-3_slider">
             <div class="section-3_slider__item">
@@ -322,5 +325,8 @@
         </div>
     </footer>
 </div>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
