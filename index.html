@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="css/owl.carousel.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <title>ЖК Сказка</title>
+    <title>ЖК Павловский квартал</title>
 </head>
 <body>
 <div id="wrapper">
@@ -18,17 +18,55 @@
             </picture>
             <nav class="nav-contacts flex">
                 <ul class="nav flex">
-                    <li><a href="#">фото</a></li>
-                    <li><a href="#">планировки</a></li>
-                    <li><a href="#">генплан </a></li>
-                    <li><a href="#">карты</a></li>
-                    <li><a href="#">о нас</a></li>
-                    <li><a href="#">подбор по параметрам</a></li>
+                    <li><a href="#section-3" class="link js-nav-link" data-hover="фото">фото</a></li>
+                    <li><a href="#section-4" class="link js-nav-link" data-hover="планировки">планировки</a></li>
+                    <li><a href="#section-6" class="link js-nav-link" data-hover="генплан">генплан </a></li>
+                    <li><a href="#section-8" class="link js-nav-link" data-hover="карты">карты</a></li>
+                    <li><a href="#section-9" class="link js-nav-link" data-hover="о нас">о нас</a></li>
+                    <li><a href="#" class="link" data-hover="подбор по параметрам">подбор по параметрам</a></li>
                 </ul>
                 <div class="header-contacts flex column">
-                    <a href="tel:+7 926 834 45 95" class="phone">+7 926 834 45 95</a>
+                    <a href="tel:+79268344595" class="phone link" data-hover="+7 926 834 45 95">+7 926 834 45 95</a>
                     <button class="call">заказать консультацию</button>
                 </div>
+            </nav>
+        </div>
+    </header>
+    <header id="mobile-header">
+        <div class="mobil-header_link-full">
+            <div class="container">
+                <p>Вы находитесь на мобильной версии сайта, <br><a href="#">Нажмите сюда для перехода на полную.</a></p>
+            </div>
+        </div>
+        <div class="mobile-logo_btn">
+            <div class="container flex">
+                <picture class="logo">
+                    <img src="img/mobile-logo.png" alt="Лого">
+                </picture>
+                <div class="btn-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="mobile_header-contacts">
+            <div class="mobile-call container flex center">
+                <p>узнать<br>
+                    подробности<br>
+                    по телефону</p>
+                <a href="tel:+79268344595" class="mobile-call_btn flex center">+7 926 834 45 95</a>
+            </div>
+        </div>
+        <div id="mobile-menu" class="container">
+            <nav class="nav-contacts flex">
+                <ul class="mobile-nav">
+                    <li><a href="#section-3" class="js-nav-link mobile-link">фото</a></li>
+                    <li><a href="#section-4" class="js-nav-link mobile-link">планировки</a></li>
+                    <li><a href="#section-8" class="js-nav-link mobile-link">как добраться</a></li>
+                    <li><a href="#section-9" class="js-nav-link mobile-link">кто мы</a></li>
+                    <li><a href="#" class="mobile-link">подбор по параметрам</a></li>
+                </ul>
             </nav>
         </div>
     </header>
@@ -49,14 +87,21 @@
                 <div class="form-title">
                     <p>Узнайте стоимость вашего нового дома!</p>
                 </div>
+                <div class="mobile_form-title">
+                    <p>ХОТИТЕ УЗНАТЬ СТОИМОСТЬ <br>
+                        ВАШЕЙ КВАРТИРЫ?
+                    </p>
+                </div>
                 <form action="" id="section-1_form">
-                    <div class="section-1_form-item">
+                    <div class="section-1_form-item form-input">
                         <label for="name"></label>
                         <input id="name" type="text" class="name" placeholder="Имя">
+                        <img src="img/name-icon.png" alt="Имя">
                     </div>
-                    <div class="section-1_form-item">
+                    <div class="section-1_form-item form-input">
                         <label for="phone"></label>
                         <input id="phone" type="tel" class="phone" placeholder="Номер телефона">
+                        <img src="img/phone-icon.png" alt="Телефон">
                     </div>
                     <button type="submit" class="submit-btn">УЗНАТЬ СТОИМОСТЬ</button>
                 </form>
@@ -73,6 +118,10 @@
                 <p>Только 2 дня в июле, мы делаем скидку 5 %
                     на квартиры. Не упустите такую возможность зарезервируйте сейчас чтобы воспользоваться потом!</p>
             </div>
+            <div class="mobile_section-2_btn">
+                <p>узнать подробности по телефону</p>
+                <a href="tel:+79268344595" class="mobile-call_btn flex center">+7 926 834 45 95</a>
+            </div>
             <div class="section-2_btn">
                 <button class="btn-about">узнать подробности</button>
             </div>
@@ -85,7 +134,7 @@
                     как у нас красиво</h2>
             </div>
         </div>
-        <div id="section-3_slider">
+        <div id="section-3_slider" class="owl-carousel">
             <div class="section-3_slider__item">
                 <picture><img src="img/IMG_9805.jpg" alt="Слайд"></picture>
             </div>
@@ -96,130 +145,149 @@
                 <picture><img src="img/IMG_9805.jpg" alt="Слайд"></picture>
             </div>
         </div>
+        <div id="slider-nav">
+            <div class="container flex"></div>
+        </div>
     </section>
     <section id="section-4">
-        <div class="container flex">
+        <div class="container">
             <div class="section-4_title">
                 <h2>Какая квартира вас интересует?</h2>
             </div>
-            <div class="section-4_content__left">
-                <article class="section-4_item flex">
-                    <picture class="section-4_item-img">
-                        <img src="img/Однушка.jpg" alt="Однушка">
-                    </picture>
-                    <div class="section-4_item-content">
-                        <div class="section-4_item-title">
-                            <h3>просторная <br>
-                                однушка</h3>
+            <div class="section-4_content-wrap flex wrap">
+                <div class="section-4_content__left">
+                    <article class="section-4_item flex wrap">
+                        <picture class="section-4_item-img">
+                            <img src="img/Однушка.jpg" alt="Однушка">
+                        </picture>
+                        <div class="section-4_item-content">
+                            <div class="section-4_item-title">
+                                <h3>просторная <br>
+                                    однушка</h3>
+                            </div>
+                            <div class="section-4_item-desc">
+                                <p>По итогам 2015 года компания «НДВ-Недвижимость» в третий раз была названа «Маркой №1 в России»</p>
+                            </div>
+                            <div class="section-4_item-btn">
+                                <button class="about">планировки</button>
+                            </div>
+                            <div class="section-4_item-price">
+                                <p>от 2 500 000 руб.</p>
+                            </div>
                         </div>
-                        <div class="section-4_item-desc">
-                            <p>По итогам 2015 года компания «НДВ-Недвижимость» в третий раз была названа «Маркой №1 в России»</p>
+                    </article>
+                    <article class="section-4_item flex wrap">
+                        <div class="section-4_item-content">
+                            <div class="section-4_item-title">
+                                <h3>комфортная <br>
+                                    двушка</h3>
+                            </div>
+                            <div class="section-4_item-desc">
+                                <p>По итогам 2015 года компания «НДВ-Недвижимость» в третий раз была названа «Маркой №1 в России»</p>
+                            </div>
+                            <div class="section-4_item-btn">
+                                <button class="about">планировки</button>
+                            </div>
+                            <div class="section-4_item-price">
+                                <p>от 3 500 000 руб.</p>
+                            </div>
                         </div>
-                        <div class="section-4_item-btn">
-                            <button class="about">планировки</button>
+                        <picture class="section-4_item-img">
+                            <img src="img/Двушка.jpg" alt="Двушка">
+                        </picture>
+                    </article>
+                </div>
+                <div class="section-4_content__right">
+                    <article class="section-4_item flex column">
+                        <picture class="section-4_item-img">
+                            <img src="img/Трешка.jpg" alt="Трешка">
+                        </picture>
+                        <div class="section-4_item-content">
+                            <div class="section-4_item-title">
+                                <h3>просторная <br>
+                                    трешка</h3>
+                            </div>
+                            <div class="section-4_item-desc">
+                                <p>По итогам 2015 года компания «НДВ-Недвижимость» в третий раз была названа «Маркой №1 в России»</p>
+                            </div>
+                            <div class="section-4_item-btn">
+                                <button class="about">планировки</button>
+                            </div>
+                            <div class="section-4_item-price">
+                                <p>от 4 500 000 руб.</p>
+                            </div>
                         </div>
-                        <div class="section-4_item-price">
-                            <p>от 2 500 000 руб.</p>
-                        </div>
-                    </div>
-                </article>
-                <article class="section-4_item flex">
-                    <picture class="section-4_item-img">
-                        <img src="img/Двушка.jpg" alt="Двушка">
-                    </picture>
-                    <div class="section-4_item-content">
-                        <div class="section-4_item-title">
-                            <h3>комфортная <br>
-                                двушка</h3>
-                        </div>
-                        <div class="section-4_item-desc">
-                            <p>По итогам 2015 года компания «НДВ-Недвижимость» в третий раз была названа «Маркой №1 в России»</p>
-                        </div>
-                        <div class="section-4_item-btn">
-                            <button class="about">планировки</button>
-                        </div>
-                        <div class="section-4_item-price">
-                            <p>от 3 500 000 руб.</p>
-                        </div>
-                    </div>
-                </article>
-            </div>
-            <div class="section-4_content__right">
-                <article class="section-4_item flex column">
-                    <picture class="section-4_item-img">
-                        <img src="img/Трешка.jpg" alt="Трешка">
-                    </picture>
-                    <div class="section-4_item-content">
-                        <div class="section-4_item-title">
-                            <h3>просторная <br>
-                                трешка</h3>
-                        </div>
-                        <div class="section-4_item-desc">
-                            <p>По итогам 2015 года компания «НДВ-Недвижимость» в третий раз была названа «Маркой №1 в России»</p>
-                        </div>
-                        <div class="section-4_item-btn">
-                            <button class="about">планировки</button>
-                        </div>
-                        <div class="section-4_item-price">
-                            <p>от 4 500 000 руб.</p>
-                        </div>
-                    </div>
-                </article>
+                    </article>
+                </div>
+                <div class="mobile_section-4_link-text-btn">
+                    <p class="mobile_section-4_link-text">Или подберите <br>
+                        по параметрам</p>
+                    <button class="mobile_section-4_link__btn">ПОДБОР ПО ПАРАМЕТРАМ</button>
+                </div>
             </div>
         </div>
     </section>
     <section id="section-5">
-        <div class="container">
-            <div class="section-5_title">
-                <h2>запишитесь на просмотр</h2>
+        <div class="container flex">
+            <div class="section-5_content">
+                <div class="section-5_title">
+                    <h2>запишитесь на просмотр</h2>
+                </div>
+                <div class="section-5_desc">
+                    <p>Вы сможете увидеть своими глазами  инфраструктуру поселка,<br>
+                        изумительныю архитектуру домов, поймете сколько времени у вас занимает дорога и т.д.</p>
+                </div>
+                <div class="section-5_form">
+                    <form action="" id="section-5_form" class="flex">
+                        <div class="section-5_form-item form-input">
+                            <label for="name2"></label>
+                            <input id="name2" type="text" class="name" placeholder="Имя">
+                            <img src="img/name-icon.png" alt="Имя">
+                        </div>
+                        <div class="section-5_form-item form-input">
+                            <label for="phone2"></label>
+                            <input id="phone2" type="tel" class="phone" placeholder="Ваш телефон">
+                            <img src="img/phone-icon.png" alt="Телефон">
+                        </div>
+                        <button type="submit" class="submit-btn">ЗАПИСАТЬСЯ</button>
+                    </form>
+                </div>
+                <div class="section-5_link">
+                    <a href="#" class="link" data-hover="Посмотреть на Яндекс.Картах">Посмотреть на Яндекс.Картах</a>
+                </div>
             </div>
-            <div class="section-5_desc">
-                <p>Вы сможете увидеть своими глазами  инфраструктуру поселка,<br>
-                    изумительныю архитектуру домов, поймете сколько времени у вас занимает дорога и т.д.</p>
-            </div>
-            <div class="section-5_form">
-                <form action="" id="section-5_form">
-                    <div class="section-1_form-item">
-                        <label for="name2"></label>
-                        <input id="name2" type="text" placeholder="Имя">
-                    </div>
-                    <div class="section-1_form-item">
-                        <label for="phone2"></label>
-                        <input id="phone2" type="tel" placeholder="Ваш телефон">
-                    </div>
-                    <button type="submit">ЗАПИСАТЬСЯ</button>
-                </form>
-            </div>
-            <div class="section-5_link">
-                <a href="#" class="link">Посмотреть на Яндекс.Картах</a>
-            </div>
+            <picture class="trees"><img src="img/trees.png" alt="Елки"></picture>
         </div>
     </section>
     <section id="section-6">
-        <div class="container">
-            <picture class="section-6_map">
-                <img src="img/section-6_bg.jpg" alt="Карта">
+        <div class="section-6_content container">
+            <!--picture class="section-6_map">
+                <img src="img/section-6_bg2.jpg" alt="Карта">
             </picture>
-            <div class="section-6_item">
-                <p>Номер дома: 11 <br>
-                    Всё продано!</p>
-            </div>
-            <div class="section-6_item">
-                <p>Номер дома: 3 <br>
-                    Кол-во квартир: 13</p>
-            </div>
-            <div class="section-6_item">
-                <p>Номер дома: 22 <br>
-                    <span>Скоро в продаже!</span></p>
-            </div>
+            <div class="container">
+                <div class="section-6_item">
+                    <p>Номер дома: 11 <br>
+                        Всё продано!</p>
+                </div>
+                <div class="section-6_item">
+                    <p>Номер дома: 3 <br>
+                        Кол-во квартир: 13</p>
+                </div>
+                <div class="section-6_item">
+                    <p>Номер дома: 22 <br>
+                        <span>Скоро в продаже!</span></p>
+                </div>
+            </div-->
             <div class="section-6_item__desc-button">
-                <p>Выбирайте дом!</p>
+                <div class="desc">
+                    <p>Выбирайте дом!</p>
+                </div>
                 <button class="button">ПОДБОР ПО ПАРАМЕТРАМ</button>
             </div>
         </div>
     </section>
     <section id="section-7">
-        <div class="container">
+        <div class="container flex">
             <div class="section-7_title">
                 <h2>15 дней <br>
                     до повышения <br>
@@ -236,26 +304,25 @@
         </div>
     </section>
     <section id="section-8">
-        <div class="container">
-            <picture class="section-8_map">
-                <img src="img/map.jpg" alt="Карта">
-            </picture>
-            <article>
-                <div class="section-8_title">
-                    <h2>Мы находимся вот тут. <br>
+        <div id="ymap"></div>
+        <div id="section-8_content" class="container">
+            <article class="section-8_item">
+                <div class="section-8_item-title">
+                    <h2 class="section-8_item-title_deks">Мы находимся вот тут. <br>
                         Смотрите сколько <br>
                         зелени вокруг!</h2>
+                    <h2 class="section-8_item-title_mobile">Как до нас добраться?</h2>
                 </div>
-                <div class="section-8_content">
-                    <div class="section-8_content__nav flex">
-                        <p class="section-8_content__nav-btn">на транспорте </p>
-                        <p class="section-8_content__nav-btn">на машине</p>
+                <div class="section-8_item-content">
+                    <div class="section-8_item-content__nav flex">
+                        <button class="section-8_item-content__nav-btn" data-hover="на транспорте">на транспорте </button>
+                        <button class="section-8_item-content__nav-btn active" data-hover="на машине">на машине</button>
                     </div>
-                    <div class="section-8_content__item-wrap">
-                        <div class="section-8_content__item">
+                    <div class="section-8_item-content__item-wrap">
+                        <div class="section-8_item-content__item">
                             <p>Добраться до комплекса можно по Новорижскому шоссе. От МКАД проехать около 14-ти км. За указателем Павловская Cлобода будет съезд направо. Далее продолжать движение около 5,7 км. до развилки, держаться левее, двигаясь до улицы Ленина. Эта дорога приведет в Павловскую Cлободу. После проезда по мосту над рекой Истра повернуть направо перед храмом Благовещения Пресвятой Богородицы. Продолжить движение по Комсомольской улице, с которой на первом повороте свернуть направо, далее через 30 метров — налево. Двигаться по новой асфальтированной дороге вдоль реки Истры около 500 метров до въезда в комплекса!</p>
                         </div>
-                        <div class="section-8_content__item">
+                        <div class="section-8_item-content__item active">
                             <p>Добраться до комплекса можно по Новорижскому шоссе. От МКАД проехать около 14-ти км. За указателем Павловская Cлобода будет съезд направо. Далее продолжать движение около 5,7 км. до развилки, держаться левее, двигаясь до улицы Ленина. Эта дорога приведет в Павловскую Cлободу. После проезда по мосту над рекой Истра повернуть направо перед храмом Благовещения Пресвятой Богородицы. Продолжить движение по Комсомольской улице, с которой на первом повороте свернуть направо, далее через 30 метров — налево. Двигаться по новой асфальтированной дороге вдоль реки Истры около 500 метров до въезда в комплекса!</p>
                         </div>
                     </div>
@@ -266,31 +333,36 @@
     <section id="section-9">
         <div class="container">
             <div class="section-9_title">
-                <h2>Наши проекты</h2>
+                <h2>Немного о том, кто мы</h2>
             </div>
-            <div class="section-9_item">
-                <p>Мы уже сделали много проектов, вот некоторые из них. В Нахабино мы все продали все довольны. В других осталось буквально по несколько квартир.</p>
-            </div>
-            <div class="section-9_item">
-                <picture>
-                    <img src="img/pavlov-hover.png" alt="Лого">
-                </picture>
-            </div>
-            <div class="section-9_item">
-                <picture>
-                    <img src="img/velednik-hover.png" alt="Лого">
-                </picture>
-            </div>
-            <div class="section-9_item">
-                <picture>
-                    <img src="img/nahabino-hover.png" alt="Лого">
-                </picture>
+            <div class="section-9_content flex">
+                <div class="section-9_item">
+                    <h3>Наши проекты</h3>
+                </div>
+                <div class="section-9_item">
+                    <p>Мы уже сделали много проектов, вот некоторые из них. В Нахабино мы все продали все довольны. В других осталось буквально по несколько квартир.</p>
+                </div>
+                <div class="section-9_item">
+                    <picture class="item-logo">
+                        <img src="img/pavlov-hover.png" alt="Лого">
+                    </picture>
+                </div>
+                <div class="section-9_item">
+                    <picture class="item-logo">
+                        <img src="img/velednik-hover.png" alt="Лого">
+                    </picture>
+                </div>
+                <div class="section-9_item">
+                    <picture class="item-logo">
+                        <img src="img/nahabino-hover.png" alt="Лого">
+                    </picture>
+                </div>
             </div>
         </div>
     </section>
     <section id="section-10">
         <div class="container flex">
-            <div class="section-10_item">
+            <div class="section-10_item flex">
                 <picture><img src="img/victory-logo.png" alt="Лого"></picture>
             </div>
             <div class="section-10_item">
@@ -300,16 +372,41 @@
             </div>
         </div>
     </section>
+    <section id="section-11_mobile">
+        <div class="section-11_content_mobile flex column center container">
+            <div class="section-11_item">
+                <p>Мы уже сделали много проектов, вот некоторые из них. В Нахабино мы все продали все довольны. В других осталось буквально по несколько квартир.</p>
+            </div>
+            <div class="section-11_item">
+                <picture class="item-logo">
+                    <img src="img/pavlov.png" alt="Лого">
+                </picture>
+            </div>
+            <div class="section-11_item">
+                <picture class="item-logo">
+                    <img src="img/velednik.png" alt="Лого">
+                </picture>
+            </div>
+            <div class="section-11_item">
+                <picture class="item-logo">
+                    <img src="img/nahabino.png" alt="Лого">
+                </picture>
+            </div>
+        </div>
+    </section>
     <footer id="footer">
         <div class="container flex">
-            <div class="footer_content">
+            <div class="footer_content flex">
                 <div class="footer_item">
                     <picture>
-                        <img src="img/logo.png" alt="Лого">
+                        <img src="img/logo.png" alt="Лого" class="logo_deks">
+                    </picture>
+                    <picture>
+                        <img src="img/mobile-logo.png" alt="Лого" class="logo_mobile">
                     </picture>
                 </div>
                 <div class="footer_item">
-                    <p>Мобильная версия сайта</p>
+                    <a href="#" class="link" data-hover="Мобильная версия сайта">Мобильная версия сайта</a>
                 </div>
                 <div class="footer_item">
                     <a href="#"><img src="img/vkontakte-hover.png" alt="vk"></a>
@@ -317,16 +414,44 @@
                 <div class="footer_item">
                     <a href="#"><img src="img/facebook-hover.png" alt="fb"></a>
                 </div>
+                <div class="mobile_footer-links">
+                    <div class="mobile_footer-links_item">
+                        <a href="#"><img src="img/vkontakte.png" alt="vk"></a>
+                    </div>
+                    <div class="mobile_footer-links_item">
+                        <a href="#"><img src="img/facebook.png" alt="fb"></a>
+                    </div>
+                </div>
             </div>
-            <div class="footer_contacts">
-                <a href="tel:+7 926 834 45 95">+7 926 834 45 95</a>
+            <div class="footer_contacts flex column">
+                <a href="tel:+79268344595" class="link" data-hover="+7 926 834 45 95">+7 926 834 45 95</a>
                 <button class="call">заказать консультацию</button>
+            </div>
+        </div>
+        <div class="mobil-header_link-full">
+            <div class="container">
+                <p>Вы находитесь на мобильной версии сайта, <br><a href="#">Нажмите сюда для перехода на полную.</a></p>
             </div>
         </div>
     </footer>
 </div>
+<div id="modal-call">
+    <div class="modal-call_wrap"><span class="close"></span>
+        <div class="modal-call_content">
+            <div class="modal-call_title">
+                <p class="title"></p>
+                <p class="desc"></p>
+            </div>
+            <div class="modal-call_form">
+
+            </div>
+        </div>
+    </div>
+</div>
 <script src="js/jquery-3.2.1.min.js"></script>
+<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 <script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
